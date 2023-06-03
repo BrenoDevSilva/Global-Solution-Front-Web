@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
 @font-face {
     font-family: fonte-titulo;
     src: url(../fonts/Strengthen.ttf);
@@ -83,7 +84,7 @@ li a {
     margin-left: 10px;
 }
 
-a:hover {
+nav a:hover {
     background: rgba(48,12,125,1)
 }
 
@@ -121,6 +122,42 @@ footer {
     margin-top: 10px;
 }
 
+#main_ajuda {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: var(--fonte-principal);
+}
+
+#main_proposta {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: var(--fonte-principal);
+}
+
+#main_index {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: var(--fonte-principal);
+}
+
+#main_contato {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: var(--fonte-principal);
+}
+
 main {
     height: 100vh;
     display: flex;
@@ -139,20 +176,166 @@ main {
     font-size: 110px;
     color: white;
     font-family: fonte-titulo;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 form {
     background-color: rgba(255, 255, 255, 0.048);
     border-radius: 71px;
     border: 3px solid white;
-    width: 626px;
-    height: 325px;
+    width: 500px;
+    height: 450px;
     margin-top: 30px;
-    padding: 60px;
+    padding: 0px 40px 10px 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    background-color: rgba(255, 255, 255, 0.092);
+    color: white;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+.input, #input_op{
+    width: 280px;
+    border-radius: 18px;
+    border: 2px solid white;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+
+.input i, #input_op i {
+    font-size: 1.2em;
+    padding: 5px;
+    background-image: linear-gradient(150deg, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 10%, rgba(48,12,125,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input input, #opinião {
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: var(--fonte-secundaria);
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+#btn {
+    width: 100%;
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+
+#btn button {
+    font-family: var(--fonte-secundaria);
+    background-image: linear-gradient(150deg, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 10%, rgba(48,12,125,1) 100%);
+    color: white;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 18px;
+}
+
+#btn button:hover {
+    color: white;
+    transition: 1s ease-in-out;
+    background-image: linear-gradient(150deg, rgba(48,12,125,1) 5%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%);
+    border: 2px solid black;
+}
+
+#cont_index {
+    background-color: rgba(255, 255, 255, 0.048);
+    border-radius: 39px;
+    border: 5px solid white;
+    width: 700px;
+    height: 450px;
+    margin-top: 20px;
+    text-align: left;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+#list_index {
+    padding-left: 25px;
+}
+
+#cont_proposta {
+    background-color: rgba(255, 255, 255, 0.048);
+    border-radius: 39px;
+    border: 5px solid white;
+    width: 600px;
+    height: min-content;
+    margin-top: 60px;
+    text-align: left;
+    padding: 15px;
+}
+
+#txt_proposta {
+    text-align: center;
+}
+
+#cont_ajuda {
+    background-color: rgba(255, 255, 255, 0.048);
+    border-radius: 39px;
+    border: 5px solid white;
+    width: 600px;
+    height: min-content;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+#div_img_ajuda {
+    margin-top: 30px;
+}
+
+#div_img_ajuda a {
+    -webkit-filter: blur(3px);
+}
+
+#div_img_ajuda a:hover {
+    -webkit-filter: none;
+}
+
+#txt_ajuda {
+    text-align: center;
+}
+
+#msg_ajuda {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#img_ajuda {
+    width: 200px;
+}
+
+#img_endereco {
+    width: 325px;
+    height: 325px;
+    border-radius: 100%;
+    border: 10px solid rgb(18, 6, 43);
+    margin-top: 20px;
+}
+
+#cont_endereco {
+    margin-top: 30px;
+    align-items: center;
+}
+
+#txt_endereco {
+    text-align: center;
 }
