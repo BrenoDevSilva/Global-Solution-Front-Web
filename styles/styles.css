@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 
 @font-face {
     font-family: fonte-titulo;
@@ -338,4 +339,47 @@ form {
 
 #txt_endereco {
     text-align: center;
+}
+
+#container_hora {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 300px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.relogio div {
+    height: 100px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(18, 6, 43);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 5px 5px 15px rgba(77, 43, 170, 0.7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio span {
+    font-size: 45px;
+    margin: 0 10px 10px 0;
+}
+
+.relogio span.tempo {
+    font-size: 11px;
+    margin-right: 10px;
+    font-weight: 1000;
 }
