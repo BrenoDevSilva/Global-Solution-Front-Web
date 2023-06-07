@@ -57,14 +57,14 @@
             <h1 id="main_h1">Flavor Fleet</h1>
         </div>
         <div id="form_div">
-            <form action="">
+            <form action="" autocomplete="off">
                 <h2 class="title">Contato</h2>
 
                 <div>
                     <label for="Username">Nome</label>
                         <div class="input">
                             <i class="fa-solid fa-user" style="color: #ffffff;"></i>
-                            <input type="text" id="username" placeholder="Nome:" name="Nome">
+                            <input type="text" id="nome_form" placeholder="Nome:" name="Nome">
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@
                     <label for="email">E-mail</label>
                     <div class="input">
                         <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                        <input type="email" id="email" placeholder="E-mail:" name="E-mail">
+                        <input type="email" id="email_form" placeholder="E-mail:" name="E-mail">
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@
                     <label for="tel">Telefone</label>
                     <div class="input">
                         <i class="fa-solid fa-mobile" style="color: #ffffff;"></i>
-                        <input type="tel" id="telefone" placeholder="Telefone:" name="Telefone">
+                        <input type="tel" id="fone_form" placeholder="Telefone:" name="Telefone">
                     </div>
                 </div>
 
@@ -93,7 +93,7 @@
                 </div>
 
                 <div id="btn">
-                    <button type="submit">Enviar</button>
+                    <button type="submit" onclick="Formulario();">Enviar</button>
                 </div>
             </form>
         </div>
@@ -109,5 +109,6 @@
             <a target="_blank" href="https://www.tiktok.com/@fiapoficial"><img class="img_foot" src="../images/tiktok.png" alt="tiktok"></a>
         </div>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
