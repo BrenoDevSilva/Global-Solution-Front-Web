@@ -23,7 +23,7 @@
 }
 
 body {
-    background-image: linear-gradient(150deg, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 30%, rgba(48,12,125,1) 100%);
+    background-image: linear-gradient(150deg, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 30%, rgb(0, 36, 242) 100%);
     background-attachment: fixed;
 }
 
@@ -98,12 +98,12 @@ footer {
     background-color: rgba(255, 255, 255, 0.092);
     display: grid;
     text-align: center;
-    height: 85px;
+    height: 120px;
     color: white;
 }
 
 #foot_btns {
-    height: 40px;
+    height: 30px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -438,3 +438,25 @@ form {
   #prev-button {
     transform: rotate(180deg);
   }
+
+#button_pai_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#button_pai_nav button {
+    text-decoration: none;
+    background-color: rgba(91, 0, 0, 0);
+    padding: 9px;
+    border: 2px solid #c6c6c62b;
+    color: black;
+    border-radius: 5px 0 5px 0;
+    height: 40px;
+    width: 200px;
+}
+
+#button_pai_nav button:hover{
+    background-color: rgba(255, 255, 255, 0.242);
+}

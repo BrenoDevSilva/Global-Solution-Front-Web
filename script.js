@@ -1,3 +1,18 @@
+document.getElementById("button1").addEventListener("click", changeBackgroundGradient);
+document.getElementById("button2").addEventListener("click", changeBackgroundGradientTwo);
+
+function changeBackgroundGradient() {
+  var gradientColors = ["#FF0000", "#00FF00", ]; // Substitua por suas cores desejadas
+  var gradient = "linear-gradient(150deg, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 30%, rgba(48,12,125,1) 100%)";
+  document.body.style.background = gradient;
+}
+
+function changeBackgroundGradientTwo() {
+  var gradientColors = ["#FF0000", "#00FF00", ]; // Substitua por suas cores desejadas
+  var gradient = "linear-gradient(150deg, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 30%, rgb(0, 36, 242) 100%)";
+  document.body.style.background = gradient;
+}
+
 const horas = document.getElementById('horas');
 const minutos = document.getElementById('minutos');
 const segundos = document.getElementById('segundos');
